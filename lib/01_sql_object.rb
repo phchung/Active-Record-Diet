@@ -4,7 +4,9 @@ require 'byebug'
 
 def reload
   load '01_sql_object.rb'
+  load '02_searchable.rb'
 end
+
 
 class SQLObject
   def self.columns
@@ -115,4 +117,8 @@ class SQLObject
   def save
     self.id.nil? ? insert : update
   end
+end
+
+class Cat < SQLObject
+  finalize!
 end

@@ -1,4 +1,4 @@
-CREATE TABLE cats (
+CREATE TABLE dogs (
   id INTEGER PRIMARY KEY,
   name VARCHAR(255) NOT NULL,
   owner_id INTEGER,
@@ -23,21 +23,21 @@ CREATE TABLE houses (
 INSERT INTO
   houses (id, address)
 VALUES
-  (1, "26th and Guerrero"), (2, "Dolores and Market");
+  (1, "19th and Taraval"), (2, "3rd and Market");
 
 INSERT INTO
   humans (id, fname, lname, house_id)
 VALUES
-  (1, "Devon", "Watts", 1),
-  (2, "Matt", "Rubens", 1),
-  (3, "Ned", "Ruggeri", 2),
-  (4, "Catless", "Human", NULL);
+  (1, "Michael", "Jordan", 1),
+  (2, "Charles", "Barkely", 1),
+  (3, "Tim", "Duncan", 2),
+  (4, "Lebron", "James", NULL);
 
 INSERT INTO
-  cats (id, name, owner_id)
+  dogs (id, name, owner_id)
 VALUES
-  (1, "Breakfast", 1),
-  (2, "Earl", 2),
-  (3, "Haskell", 3),
-  (4, "Markov", 3),
-  (5, "Stray Cat", NULL);
+  (1, "Fido", 1),
+  (2, "Scoobie", 2),
+  (3, "Porkchop", 3),
+  (4, "Santa's Little Helper", 3),
+  (5, "Null dog", NULL);
